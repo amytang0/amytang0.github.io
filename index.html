@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Amy Tang</title>
+    <meta name="author" content="Amy Tang">
+    <meta name="description" content="Amy Tang's website">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/curtain.css">
+    <link rel="stylesheet" href="css/base.css">
+    
+</head>
+<body>
+
+<ol class="curtains text-center">
+    <!--<li id="section-1" class="cover" data-parallax-background="-.05">-->
+    <li id="section-1" class="cover white-bg">
+        
+        <div class="white-bg ptxlarge pbxlarge" data-fade="450" data-slow-scroll="3">
+            <div class="container ">
+            <h1 class="red">Amy Tang</h1>
+            
+            <h4>She pretty cool. Doesn't afraid anything.</h4>
+            </div><!--/.container-->
+          </div><!--/.white-bg-->
+        <div><h3>so wow</h3></div>
+        <h3>much thanks</h3>
+        
+    </li>
+    <li id="section-2">
+         <div class="light-bg ptxlarge pbxlarge">
+            <div class="container">
+               <h2 class="red">Work</h1>
+                <h4>work hard. much success.</h4>
+            
+                  <div class="ptmed">
+                  <div class="bigrectangle white-bg"></div>
+                  </div>
+                  <div class="ptmed">
+                <div class="red-bg square horizontal" id="work1"></div>
+                  <div class="red-bg square horizontal" id="work2" ></div>
+                  <div class="red-bg square horizontal" id="work3" ></div>
+                  <div class="red-bg square horizontal" id="work4"></div>
+                  </div>
+                  
+            </div><!--/.container-->
+          </div><!--/.black-bg-->
+    </li>
+    <li id="section-3">
+        <div class="black-bg ptxlarge pbxlarge">
+            <div class="container">
+              <h2 class="red">Personal Projects</h1>
+                <h4>make apps. fun times.</h4>
+                
+                    
+                  <div class="ptmed">
+                  <div class="bigrectangle white-bg">
+                  <h4>Google</h4>
+                  <ul>
+                  <li>
+                    <p>I like her. She's funny and great and knows MapReduce somewhat.</p></li>
+                    <li><p>Worked with Google App Engine</p></li>
+                    </ul>
+                  </div>
+                  
+                         <div class="ptmed">
+                <div class="red-bg square horizontal" id="pp1"></div>
+                  <div class="red-bg square horizontal" id="pp2" ></div>
+                  <div class="red-bg square horizontal" id="pp3" ></div>
+                  <div class="red-bg square horizontal" id="pp4"></div>
+                  </div>
+                  </div>
+            </div><!--/.container-->
+          </div><!--/.lihjy-bg-->
+    </li>
+    <li id="section-4" class="light-bg">
+           <div class="light-bg ptxlarge pbxlarge">
+            <div class="container ">
+            <h2 class="red">Research</h2>
+            
+            <h4>poke phone. see what happen.</h4>
+        </div><!--/.container-->
+          </div><!--/.white-bg-->
+    </li>
+       <li id="section-5">
+         <div class="white-bg ptxlarge pbxlarge">
+            <div class="container">
+               <h2 class="red">Contact</h1>
+                <h4>call her. maybe.</h4>
+            </div><!--/.container-->
+          </div><!--/.black-bg-->
+        
+       </li>
+</ol>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 300,
+           controls: '.menu',
+           curtainLinks: '.curtain-links',
+           nextSlide: function(){
+            console.log("ok");
+           }
+       });
+    });
+</script>
+</body>
+</html>
