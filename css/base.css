@@ -193,6 +193,7 @@ display:inline-block;
   padding-bottom: 200px;
 }
 
+
 p{min-height:1px;}
 strong{font-weight:bold;}
 hr{background: #333;border: 0;height: 2px;margin: 12px auto 8px;width: 60px;}
@@ -296,4 +297,20 @@ article{
   color: #1f1e1f;
 }
 
+#scroll {
+  position:fixed;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+  z-index:10;
+}
+
+@media only screen and (max-device-width: 480px) {
+.ptxlarge {
+  padding-top: 50px;
+}
+.pbxlarge {
+  padding-bottom: 50px;
+}
+}
 
