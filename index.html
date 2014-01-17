@@ -12,7 +12,12 @@
     
 </head>
 <body>
-
+<div class="menu">
+  <ul>
+  <li><div class="circle red-bg"></li>
+  <li><div class="circle red-bg"></li>
+  </ul>
+</div>
             <p class="red" id="scroll" style="display:none;">scroll down. much thanks.</p>
 <ol class="curtains text-center">
     <!--<li id="section-1" class="cover" data-parallax-background="-.05">-->
@@ -36,14 +41,16 @@
                <h2 class="red">Work</h1>
                 <h4>work hard. much success.</h4>
             
-                  <div class="ptmed">
-                  <div class="bigrectangle white-bg"></div>
+                  <div class="ptmed pbmed">
+                  <div id="workbox" class="bigrectangle white-bg">
+                     <p>Would you kindly <a class="red">hover</a> over one of the squares</p>
+                  </div>
                   </div>
                   <div class="ptmed">
-                <div class="red-bg square horizontal" id="work1"></div>
-                  <div class="red-bg square horizontal" id="work2" ></div>
-                  <div class="red-bg square horizontal" id="work3" ></div>
-                  <div class="red-bg square horizontal" id="work4"></div>
+                <div class="work red-bg square horizontal" data-id="1" id="work1"></div>
+                  <div class="work red-bg square horizontal"  data-id="2" id="work2" ></div>
+                  <div class="work red-bg square horizontal"  data-id="3" id="work3" ></div>
+                  <div class="work red-bg square horizontal" data-id="4"  id="work4"></div>
                   </div>
                   
             </div><!--/.container-->
@@ -57,20 +64,15 @@
                 
                     
                   <div class="ptmed">
-                  <div class="bigrectangle white-bg">
-                  <h4>Google</h4>
-                  <ul>
-                  <li>
-                    <p>I like her. She's funny and great and knows MapReduce somewhat.</p></li>
-                    <li><p>Worked with Google App Engine</p></li>
-                    </ul>
+                  <div id="ppbox" class="bigrectangle white-bg">
+                  <p>Would you kindly <a class="red">hover</a> over one of the squares</p>
                   </div>
                   
                          <div class="ptmed">
-                <div class="red-bg square horizontal" id="pp1"></div>
-                  <div class="red-bg square horizontal" id="pp2" ></div>
-                  <div class="red-bg square horizontal" id="pp3" ></div>
-                  <div class="red-bg square horizontal" id="pp4"></div>
+                <div class="pp red-bg square horizontal" data-id="1" id="pp1"></div>
+                  <div class="pp red-bg square horizontal" data-id="2" id="pp2" ></div>
+                  <div class="pp red-bg square horizontal" data-id="3" id="pp3" ></div>
+                  <div class="pp red-bg square horizontal" data-id="4" id="pp4"></div>
                   </div>
                   </div>
             </div><!--/.container-->
@@ -98,42 +100,9 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/curtain.js"></script>
+<script src="js/custom.js"></script>
 <script>
-    $(function(){
-       $('.curtains').curtain({
-           scrollSpeed: 300,
-           controls: '.menu',
-           curtainLinks: '.curtain-links',
-           nextSlide: function(){
-            console.log("ok");
-           }
-       });
-    });
-    
-  idleTime = 0;
-$(document).ready(function () {
-    //Increment the idle time counter every minute.
-    var idleInterval = setInterval(timerIncrement, 1000); // 1 second
-
-    //Zero the idle timer on mouse movement.
-    $(this).mousemove(function (e) {
-        idleTime = 0;
-         $('#scroll').fadeOut(100);
-    });
-    $(this).keypress(function (e) {
-        idleTime = 0;
-         $('#scroll').fadeOut(100);
-    });
-});
-
-function timerIncrement() {
-    idleTime = idleTime + 1;
-    if (idleTime > 2) { // 2 seconds
-        //window.location.reload();
-        $('#scroll').fadeIn(700);
-        idleTime=0;
-    }
-}
+ 
 </script>
 </body>
 </html>
