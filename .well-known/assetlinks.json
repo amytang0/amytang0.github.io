@@ -1,14 +1,5 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "web",
-    "site": "https://amytang0.github.io"
-  }
-},{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.example.linkwebview",
-    "sha256_cert_fingerprints": ["37:6A:5F:09:B0:98:76:95:30:1B:A2:EB:7F:F1:38:02:08:D9:28:16:8D:E0:AA:73:BB:E3:07:35:8E:B5:26:77"]
-  }
+  "target" : { "namespace": "android_app", "package_name": "com.example.linkwebview",
+               "sha256_cert_fingerprints": ["37:6A:5F:09:B0:98:76:95:30:1B:A2:EB:7F:F1:38:02:08:D9:28:16:8D:E0:AA:73:BB:E3:07:35:8E:B5:26:77"] }
 }]
